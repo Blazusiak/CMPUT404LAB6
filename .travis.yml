@@ -17,7 +17,6 @@ install:
   - pip install -q -r requirements.txt
 
 before_script:
-  - sqlite3 -e 'create database travis_ci_db;'
   - python manage.py migrate 
 
 #command to run the test suite
