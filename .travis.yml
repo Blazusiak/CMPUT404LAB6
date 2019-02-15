@@ -21,4 +21,6 @@ before_script:
 
 #command to run the test suite
 script:
+  - python manage.py makemigrations
+  - python manage.py migrate
   - python manage.py test
